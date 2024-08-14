@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+:root {
+	font-size: 62.5%; /* 10px */
+
+	/* COLORS */
+	--white: #fff;
+	--stone-100: #f3e6d8;
+	--stone-150: #e4ded8;
+	--stone-600: #5f574e;
+	--stone-900: #302d2c;
+	--brown-800: #854632;
+	--Rose-800: #7a294f;
+	--Rose-50: #fff5fa;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: "Outfit", serif;
+}
+
+.line {
+	height: 1px;
+	background-color: var(--stone-150);
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.justify-between {
+	display: flex;
+	justify-content: space-between;
+}
+
+.container-body {
+	width: 100%;
+	min-height: 100vh;
+}
+
+.container-main {
+	background-color: var(--white);
+}
+
+.container-main img {
+	width: 100%;
+}
+
+.content {
+	gap: 4rem;
+	padding: 4rem 3rem;
+}
+
+.title {
+	font-family: "Young Serif", serif;
+	font-size: 3.5rem;
+	font-weight: 400;
+	color: var(--stone-900);
+	line-height: 1;
+	margin-bottom: 2rem;
+}
+
+.description {
+	font-family: "Outfit", sans-serif;
+	font-weight: 400;
+	color: var(--stone-600);
+	line-height: 1.3;
+}
+
+.preparation-section {
+	font-family: "Outfit", sans-serif;
+	background-color: var(--Rose-50);
+	padding: 2rem;
+	border-radius: 10px;
+}
+
+.preparation {
+	font-size: 2rem;
+	font-weight: 600;
+	color: var(--Rose-800);
+	margin-bottom: 2rem;
+}
+
+.list {
+	gap: 1rem;
+	padding-left: 3rem;
+}
+
+.item {
+	padding-left: 2rem;
+	color: var(--stone-600);
+	line-height: 1.5;
+}
+
+.circle-purple::marker {
+	color: var(--Rose-800);
+}
+
+.circle-brown::marker {
+	color: var(--brown-800);
+}
+
+.subtitle {
+	font-family: "Young Serif", serif;
+	font-size: 2.8rem;
+	font-weight: 400;
+	color: var(--brown-800);
+	margin-bottom: 2rem;
+}
+
+.number-brown-bold::marker {
+	color: var(--brown-800);
+	font-weight: 700;
+}
+
+.nutritional-table {
+	gap: 1rem;
+	margin-top: 2rem;
+}
+
+.nutritional-row {
+	padding-left: 3rem;
+}
+
+.nutrition-type {
+	color: var(--stone-600);
+}
+
+.nutrition-value {
+	width: 50%;
+	color: var(--brown-800);
+}
+
+@media (min-width: 1024px) {
+	.container-body {
+		background-color: var(--stone-100);
+	}
+
+	.container-main {
+		max-width: 50%;
+		margin: 7rem auto;
+		border-radius: 20px;
+	}
+
+	.container-main img {
+		padding: 3rem 3rem 0;
+		border-radius: 40px;
+	}
+}
